@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://llcaballeroll.github.io/cifra_math_iq_web/sitemap.xml
