@@ -2,7 +2,7 @@
 (function () {
   // Cuando la app esté publicada, pon aquí los enlaces reales.
   var IOS_URL = '';      // p. ej. https://apps.apple.com/mx/app/cifra-math-iq/id0000000000
-  var ANDROID_URL = '';  // p. ej. https://play.google.com/store/apps/details?id=com.luiscaballero.cifra
+  var ANDROID_URL = 'https://play.google.com/store/apps/details?id=com.luiscaballero.cifra';
 
   var ua = navigator.userAgent || '';
   var isAndroid = /android/i.test(ua);
