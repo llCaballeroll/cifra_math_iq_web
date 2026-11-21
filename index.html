@@ -1,275 +1,388 @@
 <!DOCTYPE html>
 <html lang="es-MX">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Cifra: Math IQ · Acertijos, lógica y números</title>
-    <meta name="description" content="Cifra: Math IQ es un juego de acertijos matemáticos y lógica. 120 acertijos originales, reto diario, 200 cruzadas, modo Relámpago y un IQ que se mide mientras juegas. Gratis en iPhone.">
-    <meta name="theme-color" content="#000000">
-    <link rel="canonical" href="https://llcaballeroll.github.io/cifra_math_iq_web/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>Cifra: Math IQ · Acertijos matemáticos que miden tu IQ</title>
+  <meta name="description" content="Cifra: Math IQ es un juego de acertijos matemáticos y lógica: 120 niveles, 8 tipos de reto, un cerebro animado que mide tu IQ en vivo, reto diario, 200 Cruzadas y modo Relámpago. Gratis en iPhone y Android, sin registro y sin conexión.">
+  <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6834884097">
+  <link rel="canonical" href="https://llcaballeroll.github.io/cifra_math_iq_web/">
+  <link rel="alternate" hreflang="es" href="https://llcaballeroll.github.io/cifra_math_iq_web/">
+  <link rel="alternate" hreflang="en" href="https://llcaballeroll.github.io/cifra_math_iq_web/en/">
+  <link rel="alternate" hreflang="x-default" href="https://llcaballeroll.github.io/cifra_math_iq_web/">
 
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Cifra: Math IQ">
-    <meta property="og:locale" content="es_MX">
-    <meta property="og:title" content="Cifra: Math IQ · ¿Crees poder competir contra mi IQ?">
-    <meta property="og:description" content="Acertijos, lógica y números. Resuelve, mide tu IQ y reta a tus amigos.">
-    <meta property="og:url" content="https://llcaballeroll.github.io/cifra_math_iq_web/">
-    <meta property="og:image" content="https://llcaballeroll.github.io/cifra_math_iq_web/assets/img/og-image.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Cifra: Math IQ, juego de acertijos matemáticos con un cerebro animado que mide tu IQ">
-    <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cifra: Math IQ">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="Cifra: Math IQ · ¿Crees poder competir contra mi IQ?">
+  <meta property="og:description" content="Acertijos, lógica y números. Resuelve, mide tu IQ con un cerebro animado y reta a tus amigos. Gratis en iPhone y Android.">
+  <meta property="og:url" content="https://llcaballeroll.github.io/cifra_math_iq_web/">
+  <meta property="og:image" content="https://llcaballeroll.github.io/cifra_math_iq_web/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Cifra: Math IQ, juego de acertijos matemáticos con un cerebro animado que mide tu IQ">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cifra: Math IQ · ¿Crees poder competir contra mi IQ?">
+  <meta name="twitter:description" content="Acertijos, lógica y números. Resuelve, mide tu IQ y reta a tus amigos.">
+  <meta name="twitter:image" content="https://llcaballeroll.github.io/cifra_math_iq_web/assets/img/og-image.jpg">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192.png">
-    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-    <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preload" as="image" href="assets/img/shots/home-760.webp" fetchpriority="high">
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MobileApplication",
-      "name": "Cifra: Math IQ",
-      "operatingSystem": "iOS, Android",
-      "applicationCategory": "GameApplication",
-      "genre": "Puzzle",
-      "inLanguage": "es",
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "MXN" },
-      "author": { "@type": "Person", "name": "Luis Angel Caballero Jardón" },
-      "image": "https://llcaballeroll.github.io/cifra_math_iq_web/assets/img/og-image.jpg"
-    }
-    </script>
-    <script>document.documentElement.classList.add('js');</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MobileApplication",
+        "@id": "https://llcaballeroll.github.io/cifra_math_iq_web/#app",
+        "name": "Cifra: Math IQ",
+        "alternateName": "Cifra",
+        "description": "Juego de acertijos matemáticos y lógica: 120 niveles en 5 capítulos, 8 tipos de acertijo, IQ en vivo con un cerebro animado, reto diario con racha, 200 Cruzadas y modo Relámpago de 60 segundos. Sin registro y sin conexión.",
+        "url": "https://llcaballeroll.github.io/cifra_math_iq_web/",
+        "operatingSystem": "iOS, Android",
+        "applicationCategory": "GameApplication",
+        "applicationSubCategory": "Puzzle",
+        "genre": "Puzzle",
+        "inLanguage": ["es", "en"],
+        "image": "https://llcaballeroll.github.io/cifra_math_iq_web/assets/img/icon-512.png",
+        "screenshot": [
+          "https://llcaballeroll.github.io/cifra_math_iq_web/assets/img/shots/home-760.webp",
+          "https://llcaballeroll.github.io/cifra_math_iq_web/assets/img/shots/iq-760.webp",
+          "https://llcaballeroll.github.io/cifra_math_iq_web/assets/img/shots/level9-760.webp"
+        ],
+        "installUrl": "https://apps.apple.com/app/id6834884097",
+        "downloadUrl": "https://play.google.com/store/apps/details?id=com.luiscaballero.cifra",
+        "sameAs": [
+          "https://apps.apple.com/app/id6834884097",
+          "https://play.google.com/store/apps/details?id=com.luiscaballero.cifra"
+        ],
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
+        "author": { "@type": "Person", "name": "Luis Angel Caballero Jardón" }
+      },
+      {
+        "@type": "WebSite",
+        "name": "Cifra: Math IQ",
+        "url": "https://llcaballeroll.github.io/cifra_math_iq_web/",
+        "inLanguage": "es-MX"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "¿Cifra: Math IQ es gratis?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Todos los niveles se juegan gratis. Hay anuncios y, si quieres, puedes comprar rayos o quitar los anuncios con una compra única." } },
+          { "@type": "Question", "name": "¿El IQ es real?", "acceptedAnswer": { "@type": "Answer", "text": "Es una estimación de entretenimiento basada en cómo juegas: aciertos, estrellas, velocidad, constancia y ayudas usadas. No es una prueba psicológica ni un diagnóstico." } },
+          { "@type": "Question", "name": "¿Necesito internet o crear una cuenta?", "acceptedAnswer": { "@type": "Answer", "text": "No. Cifra funciona sin conexión y sin registro. Solo se necesita internet para los anuncios y las compras." } },
+          { "@type": "Question", "name": "¿Dónde se guarda mi progreso?", "acceptedAnswer": { "@type": "Answer", "text": "En tu teléfono. No hay servidores con datos de jugadores. Si borras la app se borra tu progreso; «Quitar anuncios» siempre se puede restaurar." } },
+          { "@type": "Question", "name": "¿Para qué edad es?", "acceptedAnswer": { "@type": "Answer", "text": "Para todo público. Los acertijos van de fáciles a muy difíciles, así que hay reto para chicos y grandes." } }
+        ]
+      }
+    ]
+  }
+  </script>
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-    <nav class="navbar" aria-label="Principal">
-        <div class="container nav-inner">
-            <a href="index.html" class="brand" aria-label="Cifra: Math IQ, inicio">
-                <img src="assets/img/icon-192.png" alt="" width="30" height="30">
-                Cifra
-            </a>
-            <div class="nav-links">
-                <a href="#acertijos">Acertijos</a>
-                <a href="#iq">IQ</a>
-                <a href="#modos">Modos</a>
-                <a href="#rayos">Rayos</a>
-                <a href="support.html">Soporte</a>
-            </div>
-            <a href="#descargar" class="nav-cta" data-smart-download>Descargar</a>
-        </div>
+  <div class="lang-bar" data-lang-bar hidden lang="en">
+    <div class="wrap">
+      <span>This page is also available in English.</span>
+      <a href="en/" hreflang="en" data-lang-link="en">View in English ›</a>
+      <button type="button" aria-label="Close">×</button>
+    </div>
+  </div>
+
+  <header class="nav">
+    <nav class="wrap nav-inner" aria-label="Principal">
+      <a class="brand" href="./" aria-label="Cifra: Math IQ, inicio"><img src="assets/img/icon-192.png" alt="" width="28" height="28">Cifra</a>
+      <div class="nav-links">
+        <a href="#acertijos">Acertijos</a>
+        <a href="#iq">Tu IQ</a>
+        <a href="#modos">Modos</a>
+        <a href="#rayos">Rayos</a>
+        <a href="support.html">Soporte</a>
+      </div>
+      <a class="nav-lang" href="en/" hreflang="en" lang="en" data-lang-link="en" aria-label="English version">EN</a>
+      <a class="btn" href="#descargar" data-smart-download>Descargar</a>
     </nav>
+  </header>
 
-    <main id="contenido">
-        <!-- HERO -->
-        <header class="hero dark">
-            <div class="container">
-                <img class="hero-logo reveal" src="assets/img/icon-512.png" alt="" width="96" height="96">
-                <h1 class="reveal">Cifra<span class="badge">Math IQ</span></h1>
-                <p class="lead reveal">Acertijos, lógica y números. Un juego que sí te pone a pensar y que mide tu IQ mientras juegas.</p>
-
-                <div class="store-row reveal" id="descargar">
-                    <a class="store-btn" data-store="ios" href="https://apps.apple.com/mx/app/cifra-math-iq/id6834884097" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 1.43c0 1.14-.5 2.27-1.18 3.08-.74.9-1.99 1.57-2.99 1.57-.12 0-.23-.02-.3-.03-.01-.06-.04-.22-.04-.39 0-1.15.57-2.27 1.2-2.98.81-.94 2.15-1.64 3.25-1.68.03.13.06.28.06.43Zm4.56 15.71c-.03.07-.46 1.58-1.52 3.12-.94 1.34-1.94 2.71-3.43 2.71-1.52 0-1.9-.88-3.63-.88-1.7 0-2.3.91-3.67.91-1.38 0-2.33-1.26-3.43-2.8C4 18.38 2.97 15.57 2.97 12.92c0-4.28 2.8-6.55 5.55-6.55 1.45 0 2.67.95 3.6.95.86 0 2.22-1.01 3.9-1.01.61 0 2.89.06 4.37 2.19-.13.09-2.38 1.37-2.38 4.19 0 3.26 2.85 4.42 2.95 4.45Z"/></svg>
-                        <span><small data-live="Descárgalo en el">Descárgalo en el</small><strong>App Store</strong></span>
-                    </a>
-                    <a class="store-btn" data-store="android" href="https://play.google.com/store/apps/details?id=com.luiscaballero.cifra" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00c3ff" d="M3.6 1.8 13.8 12 3.6 22.2c-.37-.2-.6-.6-.6-1.1V2.9c0-.5.23-.9.6-1.1Z"/><path fill="#ffc400" d="m17.2 8.6 3.2 1.8c.9.5.9 1.8 0 2.3l-3.2 1.8-3.4-2.5Z"/><path fill="#00d26a" d="M3.6 1.8c.36-.22.82-.22 1.2 0l12.4 6.8-3.4 3.4Z"/><path fill="#ff3a44" d="m13.8 12 3.4 3.4-12.4 6.8c-.38.22-.84.22-1.2 0Z"/></svg>
-                        <span><small data-live="Disponible en">Disponible en</small><strong>Google Play</strong></span>
-                    </a>
-                </div>
-                <p class="soon-note">Gratis · Sin registro · Funciona sin conexión</p>
-
-                <div class="hero-phones reveal">
-                    <div class="hero-glow" aria-hidden="true"></div>
-                    <div class="phone"><img src="assets/img/shots/level9.webp" alt="Un acertijo de Cifra con su teclado numérico" width="600" height="1304" loading="lazy"></div>
-                    <div class="phone"><img src="assets/img/shots/home.webp" alt="Pantalla de inicio de Cifra con los modos de juego y el botón de IQ" width="600" height="1304" fetchpriority="high"></div>
-                    <div class="phone"><img src="assets/img/shots/iq.webp" alt="Pantalla de IQ con el cerebro animado y los hemisferios" width="600" height="1304" loading="lazy"></div>
-                </div>
-            </div>
-
-            <section class="stats" aria-label="El juego en cifras">
-                <div class="container">
-                    <div class="stats-grid reveal">
-                        <div class="stat"><b>120</b><span>acertijos originales</span></div>
-                        <div class="stat"><b class="lime">8</b><span>tipos de reto</span></div>
-                        <div class="stat"><b>200</b><span>cruzadas numéricas</span></div>
-                        <div class="stat"><b class="lime">IQ</b><span>que se mide jugando</span></div>
-                    </div>
-                </div>
-            </section>
-        </header>
-
-        <!-- ACERTIJOS -->
-        <section id="acertijos" class="parchment">
-            <div class="container feature">
-                <div class="copy reveal">
-                    <span class="eyebrow">Acertijos</span>
-                    <h2>Mira el patrón.<br>Encuentra la cifra.</h2>
-                    <p class="lead">Cada nivel esconde una regla. Descúbrela, escribe el número que falta y avanza. Sin trucos de memoria: aquí gana quien piensa.</p>
-                    <div class="chips" aria-label="Tipos de acertijo">
-                        <span class="chip">Secuencias</span><span class="chip">Símbolos</span><span class="chip">Transformaciones</span>
-                        <span class="chip">Operador ⊕</span><span class="chip">Cuadrículas</span><span class="chip">Ruedas</span>
-                        <span class="chip">Triángulos</span><span class="chip">Lógica</span>
-                    </div>
-                    <ul class="checks" style="margin-top:26px">
-                        <li>5 capítulos: Despertar, Patrones, Ingenio, Laberinto y Maestría.</li>
-                        <li>3 estrellas si lo resuelves sin errores ni ayuda.</li>
-                        <li>¿Atorado? Pide una pista o la solución con rayos ⚡.</li>
-                    </ul>
-                </div>
-                <div class="media reveal"><div class="phone"><img src="assets/img/shots/level30.webp" alt="Acertijo de un capítulo avanzado" width="600" height="1304" loading="lazy"></div></div>
-            </div>
-        </section>
-
-        <!-- IQ -->
-        <section id="iq" class="dark">
-            <div class="container feature flip">
-                <div class="copy reveal">
-                    <span class="eyebrow">Math IQ</span>
-                    <h2>Un cerebro que<br><span class="lime">piensa contigo.</span></h2>
-                    <p class="lead">Tu IQ sube o baja con cada nivel. Un cerebro animado, con ojos y lentes, te muestra qué hemisferio tienes más desarrollado y en qué eres mejor.</p>
-                    <ul class="checks">
-                        <li>Hemisferio izquierdo: lógica y cálculo.</li>
-                        <li>Hemisferio derecho: patrones y visión espacial.</li>
-                        <li>Velocidad y constancia con Relámpago y el reto diario.</li>
-                        <li>Las pistas y soluciones restan: el IQ se gana sin ayuda.</li>
-                    </ul>
-                    <p class="quote">«¿Crees poder competir contra mi coeficiente intelectual?»<small>Comparte tu tarjeta de IQ por WhatsApp, Telegram o donde quieras.</small></p>
-                </div>
-                <div class="media reveal"><div class="phone"><img src="assets/img/shots/iq.webp" alt="Tarjeta de IQ con cerebro animado, percentil y habilidades" width="600" height="1304" loading="lazy"></div></div>
-            </div>
-        </section>
-
-        <!-- MODOS -->
-        <section id="modos" class="parchment">
-            <div class="container center">
-                <span class="eyebrow reveal">Modos de juego</span>
-                <h2 class="reveal">Un reto para cada momento.</h2>
-                <p class="lead reveal" style="max-width:640px;margin-top:16px">Cinco minutos en el camión o una hora en el sillón: siempre hay algo para tu cabeza.</p>
-
-                <div class="modes">
-                    <article class="mode reveal">
-                        <div class="icon" aria-hidden="true">📅</div>
-                        <h3>Reto diario</h3>
-                        <p>Un acertijo nuevo cada día. Mantén tu racha 🔥 y gana rayos extra cada 7 días.</p>
-                        <div class="shot"><img src="assets/img/shots/daily.webp" alt="Calendario del reto diario con racha" width="600" height="1304" loading="lazy"></div>
-                    </article>
-                    <article class="mode reveal">
-                        <div class="icon" aria-hidden="true">✚</div>
-                        <h3>Cruzadas</h3>
-                        <p>200 crucigramas de operaciones. Arrastra las fichas y cuadra todas las cuentas.</p>
-                        <div class="shot"><img src="assets/img/shots/cross.webp" alt="Cruzada numérica con fichas para arrastrar" width="600" height="1304" loading="lazy"></div>
-                    </article>
-                    <article class="mode reveal">
-                        <div class="icon" aria-hidden="true">⚡</div>
-                        <h3>Relámpago</h3>
-                        <p>60 segundos, 4 opciones y combos hasta ×5. ¿Cuántas resuelves antes del cero?</p>
-                        <div class="shot"><img src="assets/img/shots/blitz.webp" alt="Modo Relámpago con temporizador y opciones" width="600" height="1304" loading="lazy"></div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- RAYOS -->
-        <section id="rayos" class="dark">
-            <div class="container narrow center">
-                <span class="eyebrow reveal">Rayos ⚡</span>
-                <h2 class="reveal">Aquí se gana pensando.</h2>
-                <p class="lead reveal" style="margin-top:16px">Los rayos pagan pistas y soluciones. Se consiguen resolviendo bien, no repitiendo niveles. Si los necesitas ya, están en la tienda.</p>
-                <div class="rayos-grid">
-                    <div class="rayo-card reveal"><b>+3 ⚡</b><span>por acertijo con 3 estrellas</span></div>
-                    <div class="rayo-card reveal"><b>+5 ⚡</b><span>por cada reto diario</span></div>
-                    <div class="rayo-card reveal"><b>+10 ⚡</b><span>por cada semana de racha</span></div>
-                </div>
-                <p style="margin-top:28px;font-size:.95rem">También puedes ver un video para ganar 5 rayos o quitar los anuncios para siempre con una sola compra.</p>
-            </div>
-        </section>
-
-        <!-- GALERÍA -->
-        <section class="light" aria-label="Capturas">
-            <div class="container center">
-                <span class="eyebrow reveal">Capturas</span>
-                <h2 class="reveal">Diseño limpio. Cero distracciones.</h2>
-            </div>
-            <div class="gallery reveal">
-                <figure><div class="phone"><img src="assets/img/shots/home.webp" alt="Inicio" width="600" height="1304" loading="lazy"></div><figcaption>Inicio</figcaption></figure>
-                <figure><div class="phone"><img src="assets/img/shots/levels.webp" alt="Capítulos y niveles" width="600" height="1304" loading="lazy"></div><figcaption>Capítulos</figcaption></figure>
-                <figure><div class="phone"><img src="assets/img/shots/level9.webp" alt="Acertijo" width="600" height="1304" loading="lazy"></div><figcaption>Acertijos</figcaption></figure>
-                <figure><div class="phone"><img src="assets/img/shots/iq.webp" alt="Tu IQ" width="600" height="1304" loading="lazy"></div><figcaption>Tu IQ</figcaption></figure>
-                <figure><div class="phone"><img src="assets/img/shots/cross.webp" alt="Cruzadas" width="600" height="1304" loading="lazy"></div><figcaption>Cruzadas</figcaption></figure>
-                <figure><div class="phone"><img src="assets/img/shots/store.webp" alt="Tienda de rayos" width="600" height="1304" loading="lazy"></div><figcaption>Tienda</figcaption></figure>
-            </div>
-        </section>
-
-        <!-- PREGUNTAS -->
-        <section class="parchment">
-            <div class="container narrow">
-                <div class="center">
-                    <span class="eyebrow reveal">Preguntas frecuentes</span>
-                    <h2 class="reveal">Lo que te estás preguntando.</h2>
-                </div>
-                <div class="faq reveal">
-                    <details>
-                        <summary>¿Es gratis?</summary>
-                        <p>Sí. Puedes jugar todos los niveles gratis. Hay anuncios y, si quieres, puedes comprar rayos o quitar los anuncios con una compra única.</p>
-                    </details>
-                    <details>
-                        <summary>¿El IQ es real?</summary>
-                        <p>Es una estimación divertida basada en cómo juegas: aciertos, estrellas, velocidad, constancia y ayudas usadas. No es una prueba psicológica ni un diagnóstico.</p>
-                    </details>
-                    <details>
-                        <summary>¿Necesito internet o crear una cuenta?</summary>
-                        <p>No. Cifra funciona sin conexión y sin registro. Solo se necesita internet para los anuncios y las compras.</p>
-                    </details>
-                    <details>
-                        <summary>¿Dónde se guarda mi progreso?</summary>
-                        <p>En tu teléfono. No tenemos servidores con datos de jugadores. Si borras la app, se borra tu progreso; «Quitar anuncios» siempre se puede restaurar.</p>
-                    </details>
-                    <details>
-                        <summary>¿Para qué edad es?</summary>
-                        <p>Para todo público. Los acertijos van de fáciles a muy difíciles, así que hay reto para chicos y grandes.</p>
-                    </details>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA -->
-        <section class="dark">
-            <div class="container center">
-                <h2 class="reveal">¿Crees poder competir<br>contra <span class="lime">mi IQ</span>?</h2>
-                <p class="lead reveal" style="margin-top:16px">Descarga Cifra, resuelve y compártelo.</p>
-                <div class="store-row reveal">
-                    <a class="store-btn" data-store="ios" href="https://apps.apple.com/mx/app/cifra-math-iq/id6834884097" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 1.43c0 1.14-.5 2.27-1.18 3.08-.74.9-1.99 1.57-2.99 1.57-.12 0-.23-.02-.3-.03-.01-.06-.04-.22-.04-.39 0-1.15.57-2.27 1.2-2.98.81-.94 2.15-1.64 3.25-1.68.03.13.06.28.06.43Zm4.56 15.71c-.03.07-.46 1.58-1.52 3.12-.94 1.34-1.94 2.71-3.43 2.71-1.52 0-1.9-.88-3.63-.88-1.7 0-2.3.91-3.67.91-1.38 0-2.33-1.26-3.43-2.8C4 18.38 2.97 15.57 2.97 12.92c0-4.28 2.8-6.55 5.55-6.55 1.45 0 2.67.95 3.6.95.86 0 2.22-1.01 3.9-1.01.61 0 2.89.06 4.37 2.19-.13.09-2.38 1.37-2.38 4.19 0 3.26 2.85 4.42 2.95 4.45Z"/></svg>
-                        <span><small data-live="Descárgalo en el">Descárgalo en el</small><strong>App Store</strong></span>
-                    </a>
-                    <a class="store-btn" data-store="android" href="https://play.google.com/store/apps/details?id=com.luiscaballero.cifra" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00c3ff" d="M3.6 1.8 13.8 12 3.6 22.2c-.37-.2-.6-.6-.6-1.1V2.9c0-.5.23-.9.6-1.1Z"/><path fill="#ffc400" d="m17.2 8.6 3.2 1.8c.9.5.9 1.8 0 2.3l-3.2 1.8-3.4-2.5Z"/><path fill="#00d26a" d="M3.6 1.8c.36-.22.82-.22 1.2 0l12.4 6.8-3.4 3.4Z"/><path fill="#ff3a44" d="m13.8 12 3.4 3.4-12.4 6.8c-.38.22-.84.22-1.2 0Z"/></svg>
-                        <span><small data-live="Disponible en">Disponible en</small><strong>Google Play</strong></span>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-top">
-                <p>Cifra: Math IQ es un juego independiente. El IQ que muestra es una estimación de entretenimiento, no una prueba psicológica.</p>
-                <div class="footer-links">
-                    <a href="privacy.html">Privacidad</a>
-                    <a href="terms.html">Términos</a>
-                    <a href="support.html">Soporte</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <span>© 2026 Luis Angel Caballero Jardón · Metepec, México</span>
-                <span>Hecho con 🧠 en México</span>
-            </div>
+  <main id="contenido">
+    <!-- Portada -->
+    <section class="tile dark hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <img class="hero-icon" src="assets/img/icon-192.png" alt="" width="88" height="88">
+        <p class="eyebrow">Cifra: Math IQ</p>
+        <h1 id="hero-title" class="display reveal">Acertijos que sí<br>te ponen a pensar.</h1>
+        <p class="lead reveal">Descubre la regla, encuentra la cifra y mira cómo cambia tu IQ en vivo con un cerebro que piensa contigo.</p>
+        <div class="badges reveal">
+          <a class="store-badge" data-store="ios" href="https://apps.apple.com/app/id6834884097" target="_blank" rel="noopener" aria-label="Descárgalo en el App Store">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 1.43c0 1.14-.5 2.27-1.18 3.08-.74.9-1.99 1.57-2.99 1.57-.12 0-.23-.02-.3-.03-.01-.06-.04-.22-.04-.39 0-1.15.57-2.27 1.2-2.98.81-.94 2.15-1.64 3.25-1.68.03.13.06.28.06.43Zm4.56 15.71c-.03.07-.46 1.58-1.52 3.12-.94 1.34-1.94 2.71-3.43 2.71-1.52 0-1.9-.88-3.63-.88-1.7 0-2.3.91-3.67.91-1.38 0-2.33-1.26-3.43-2.8C4 18.38 2.97 15.57 2.97 12.92c0-4.28 2.8-6.55 5.55-6.55 1.45 0 2.67.95 3.6.95.86 0 2.22-1.01 3.9-1.01.61 0 2.89.06 4.37 2.19-.13.09-2.38 1.37-2.38 4.19 0 3.26 2.85 4.42 2.95 4.45Z"/></svg>
+            <span><small>Descárgalo en el</small><strong>App Store</strong></span>
+          </a>
+          <a class="store-badge" data-store="android" href="https://play.google.com/store/apps/details?id=com.luiscaballero.cifra" target="_blank" rel="noopener" aria-label="Disponible en Google Play">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00c3ff" d="M3.6 1.8 13.8 12 3.6 22.2c-.37-.2-.6-.6-.6-1.1V2.9c0-.5.23-.9.6-1.1Z"/><path fill="#ffc400" d="m17.2 8.6 3.2 1.8c.9.5.9 1.8 0 2.3l-3.2 1.8-3.4-2.5Z"/><path fill="#00d26a" d="M3.6 1.8c.36-.22.82-.22 1.2 0l12.4 6.8-3.4 3.4Z"/><path fill="#ff3a44" d="m13.8 12 3.4 3.4-12.4 6.8c-.38.22-.84.22-1.2 0Z"/></svg>
+            <span><small>Disponible en</small><strong>Google Play</strong></span>
+          </a>
         </div>
-    </footer>
-    <script src="js/site.js" defer></script>
+        <p class="badge-note">Gratis · Sin registro · Funciona sin conexión</p>
+      </div>
+      <div class="stage crop">
+        <img class="screen side" src="assets/img/shots/level9-420.webp" alt="Un acertijo de Cifra con su teclado numérico" width="420" height="913" loading="lazy">
+        <img class="screen" src="assets/img/shots/home-760.webp" srcset="assets/img/shots/home-420.webp 420w, assets/img/shots/home-760.webp 760w" sizes="(max-width: 640px) 78vw, 330px" alt="Pantalla de inicio de Cifra con el nivel actual, el reto diario, Cruzadas, Relámpago y tu IQ" width="760" height="1652" fetchpriority="high">
+        <img class="screen side" src="assets/img/shots/iq-420.webp" alt="Pantalla de IQ con el cerebro animado y los dos hemisferios" width="420" height="913" loading="lazy">
+      </div>
+    </section>
+
+    <!-- Cifras -->
+    <section class="tile dark facts-tile" aria-label="El juego en cifras">
+      <div class="wrap">
+        <div class="facts reveal">
+          <div><b>120</b><span>acertijos en 5 capítulos</span></div>
+          <div><b>8</b><span>tipos de reto</span></div>
+          <div><b>200</b><span>Cruzadas numéricas</span></div>
+          <div><b>60 s</b><span>de Relámpago</span></div>
+          <div><b>0</b><span>registros necesarios</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Acertijos -->
+    <section id="acertijos" class="tile alt" aria-labelledby="acertijos-title">
+      <div class="wrap">
+        <p class="eyebrow">Acertijos originales</p>
+        <h2 id="acertijos-title" class="headline reveal">Mira el patrón.<br>Encuentra la cifra.</h2>
+        <p class="lead reveal">Cada nivel esconde una regla. Descúbrela, escribe el número que falta y avanza. Sin trucos de memoria: aquí gana quien piensa.</p>
+        <ul class="types reveal" aria-label="Tipos de acertijo">
+          <li><span class="glyph" aria-hidden="true">2·4·8</span><strong>Secuencias</strong><span>¿Qué número sigue?</span></li>
+          <li><span class="glyph" aria-hidden="true">★ ▲ ●</span><strong>Símbolos</strong><span>Cada figura vale algo.</span></li>
+          <li><span class="glyph" aria-hidden="true">7 → 49</span><strong>Transformaciones</strong><span>Lo que entra y lo que sale.</span></li>
+          <li><span class="glyph" aria-hidden="true">a ⊕ b</span><strong>Operadores</strong><span>Una operación inventada.</span></li>
+          <li><span class="glyph" aria-hidden="true">4·9·2</span><strong>Cuadrículas</strong><span>Filas y columnas que cuadran.</span></li>
+          <li><span class="glyph" aria-hidden="true">↻ 11</span><strong>Ruedas</strong><span>Números que giran.</span></li>
+          <li><span class="glyph" aria-hidden="true">△ 12</span><strong>Triángulos</strong><span>Las esquinas dan el centro.</span></li>
+          <li><span class="glyph" aria-hidden="true">∴ ?</span><strong>Lógica</strong><span>Deducción pura.</span></li>
+        </ul>
+        <ol class="chapters reveal" aria-label="Capítulos">
+          <li>Despertar</li><li>Patrones</li><li>Ingenio</li><li>Laberinto</li><li>Maestría</li>
+        </ol>
+
+        <div class="try reveal" data-try data-answer="30"
+             data-ok3="¡Correcto a la primera! Eso vale 3 estrellas y +3 ⚡."
+             data-ok="¡Correcto! En la app, sin ayuda, serían 3 estrellas."
+             data-no="Casi. Revisa cuánto crece cada salto."
+             data-hint-text="Pista: mira la diferencia entre cada número: +4, +6, +8…">
+          <h3>Pruébalo aquí mismo</h3>
+          <form>
+            <div class="seq">
+              <span>2</span><span>6</span><span>12</span><span>20</span>
+              <label class="visually-hidden" for="try-es">¿Qué número sigue?</label>
+              <input id="try-es" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off" placeholder="?">
+            </div>
+            <div class="try-actions">
+              <button class="btn" type="submit">Comprobar</button>
+              <button class="btn ghost" type="button" data-hint>Pista</button>
+            </div>
+          </form>
+          <p class="result" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+      <div class="stage crop">
+        <img class="screen side" src="assets/img/shots/levels-420.webp" alt="Mapa de capítulos y niveles con estrellas" width="420" height="913" loading="lazy">
+        <img class="screen" src="assets/img/shots/level9-760.webp" srcset="assets/img/shots/level9-420.webp 420w, assets/img/shots/level9-760.webp 760w" sizes="(max-width: 640px) 78vw, 330px" alt="Acertijo de secuencia con teclado numérico, pista y solución" width="760" height="1652" loading="lazy">
+        <img class="screen side" src="assets/img/shots/level30-420.webp" alt="Acertijo de un capítulo avanzado" width="420" height="913" loading="lazy">
+      </div>
+    </section>
+
+    <!-- IQ -->
+    <section id="iq" class="tile dark" aria-labelledby="iq-title">
+      <div class="wrap iq-layout">
+        <div>
+          <p class="eyebrow">Tu IQ, en vivo</p>
+          <h2 id="iq-title" class="headline reveal">Un cerebro que<br><span class="hl">piensa contigo.</span></h2>
+          <p class="lead reveal">Tu IQ sube o baja con cada nivel. Un cerebro animado, con ojos y lentes, reacciona contigo y te muestra qué hemisferio tienes más desarrollado.</p>
+          <ul class="checks reveal">
+            <li>Izquierdo: lógica y cálculo. Derecho: patrones y visión espacial.</li>
+            <li>Velocidad y constancia con Relámpago y el reto diario.</li>
+            <li>Las pistas y soluciones restan: el IQ se gana sin ayuda.</li>
+          </ul>
+          <p class="quote reveal">«¿Crees poder competir contra mi IQ?»<small>Comparte tu tarjeta por WhatsApp, Telegram o donde quieras.</small></p>
+        </div>
+        <div class="brain-card" role="img" aria-label="Ejemplo de tarjeta de IQ: 133, más alto que el 99 % de las personas; hemisferio izquierdo 54 %, derecho 46 %">
+          <img class="brain" src="assets/img/brain.webp" alt="" width="640" height="524" loading="lazy">
+          <div class="iq-number" data-count="133" aria-hidden="true">133<small>IQ</small></div>
+          <p class="iq-caption" aria-hidden="true">Más alto que el 99 % de las personas</p>
+          <div aria-hidden="true">
+            <div class="hemi-labels"><span>Izquierdo · Analítico</span><span>Derecho · Visual</span></div>
+            <div class="hemi"><i style="width:54%">54%</i><b>46%</b></div>
+            <ul class="skills">
+              <li style="--c:#5aa8ff;--v:72%"><span>Lógica</span><span>72</span></li>
+              <li style="--c:#5aa8ff;--v:75%"><span>Cálculo</span><span>75</span></li>
+              <li style="--c:#a6ff2e;--v:72%"><span>Patrones</span><span>72</span></li>
+              <li style="--c:#a6ff2e;--v:51%"><span>Visión espacial</span><span>51</span></li>
+              <li style="--c:#ffd60a;--v:81%"><span>Velocidad</span><span>81</span></li>
+              <li style="--c:#ffd60a;--v:57%"><span>Constancia</span><span>57</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modos -->
+    <section id="modos" class="tile" aria-labelledby="modos-title">
+      <div class="wrap">
+        <p class="eyebrow">Modos de juego</p>
+        <h2 id="modos-title" class="headline reveal">Un reto para cada momento.</h2>
+        <p class="lead reveal">Cinco minutos en el camión o una hora en el sillón: siempre hay algo para tu cabeza.</p>
+        <div class="modes">
+          <article class="mode reveal">
+            <span class="ico amber" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
+            <h3>Reto diario</h3>
+            <p>Un acertijo nuevo cada día con calendario y racha 🔥. Cada 7 días seguidos ganas rayos extra.</p>
+            <img src="assets/img/shots/daily-420.webp" alt="Calendario del reto diario con la racha" width="420" height="913" loading="lazy">
+          </article>
+          <article class="mode reveal">
+            <span class="ico green" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
+            <h3>200 Cruzadas</h3>
+            <p>Crucigramas de operaciones: arrastra las fichas y haz que todas las cuentas cuadren.</p>
+            <img src="assets/img/shots/cross-420.webp" alt="Cruzada numérica con fichas para arrastrar" width="420" height="913" loading="lazy">
+          </article>
+          <article class="mode reveal">
+            <span class="ico yellow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span>
+            <h3>Relámpago</h3>
+            <p>60 segundos, 4 opciones y combos hasta ×5. ¿Cuántas resuelves antes del cero?</p>
+            <img src="assets/img/shots/blitz-420.webp" alt="Modo Relámpago con temporizador y cuatro opciones" width="420" height="913" loading="lazy">
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rayos -->
+    <section id="rayos" class="tile dark tile-2" aria-labelledby="rayos-title">
+      <div class="wrap pad-b">
+        <p class="eyebrow">Rayos ⚡</p>
+        <h2 id="rayos-title" class="headline reveal">Aquí se gana pensando.</h2>
+        <p class="lead reveal">Los rayos pagan pistas y soluciones. Se consiguen resolviendo bien, no repitiendo niveles.</p>
+        <div class="bolts reveal">
+          <div><b>+3 ⚡</b><span>por acertijo con 3 estrellas</span></div>
+          <div><b>+5 ⚡</b><span>por cada reto diario</span></div>
+          <div><b>+10 ⚡</b><span>por cada semana de racha</span></div>
+        </div>
+        <p class="fine">¿Los necesitas ya? Mira un video para ganar 5 rayos, consíguelos en la tienda o quita los anuncios para siempre con una sola compra.</p>
+      </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="tile alt" aria-labelledby="galeria-title" data-gallery>
+      <div class="wrap">
+        <p class="eyebrow">Capturas</p>
+        <h2 id="galeria-title" class="headline">Diseño limpio. Cero distracciones.</h2>
+      </div>
+      <div class="gallery">
+        <div class="gallery-nav">
+          <button type="button" data-dir="-1" aria-label="Capturas anteriores">‹</button>
+          <button type="button" data-dir="1" aria-label="Capturas siguientes">›</button>
+        </div>
+        <div class="gallery-track" tabindex="0" role="group" aria-label="Capturas, desliza hacia los lados">
+          <figure><img class="screen" src="assets/img/shots/home-420.webp" alt="" width="420" height="913" loading="lazy"><figcaption>Inicio con tu nivel y tu IQ</figcaption></figure>
+          <figure><img class="screen" src="assets/img/shots/level9-420.webp" alt="" width="420" height="913" loading="lazy"><figcaption>Acertijos con teclado propio</figcaption></figure>
+          <figure><img class="screen" src="assets/img/shots/iq-420.webp" alt="" width="420" height="913" loading="lazy"><figcaption>Tu IQ y tus habilidades</figcaption></figure>
+          <figure><img class="screen" src="assets/img/shots/levels-420.webp" alt="" width="420" height="913" loading="lazy"><figcaption>5 capítulos, 120 niveles</figcaption></figure>
+          <figure><img class="screen" src="assets/img/shots/cross-420.webp" alt="" width="420" height="913" loading="lazy"><figcaption>200 Cruzadas</figcaption></figure>
+          <figure><img class="screen" src="assets/img/shots/blitz-420.webp" alt="" width="420" height="913" loading="lazy"><figcaption>Relámpago de 60 segundos</figcaption></figure>
+          <figure><img class="screen" src="assets/img/shots/daily-420.webp" alt="" width="420" height="913" loading="lazy"><figcaption>Reto diario con racha</figcaption></figure>
+          <figure><img class="screen" src="assets/img/shots/store-420.webp" alt="" width="420" height="913" loading="lazy"><figcaption>Tienda de rayos</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacidad -->
+    <section class="tile" aria-labelledby="privacidad-title">
+      <div class="wrap pad-b">
+        <p class="eyebrow">Privacidad</p>
+        <h2 id="privacidad-title" class="headline reveal">Tu progreso es tuyo.</h2>
+        <ul class="privacy-points reveal">
+          <li><strong>Sin cuenta.</strong> No te pedimos nombre, correo ni teléfono.</li>
+          <li><strong>En tu teléfono.</strong> Niveles, estrellas, rayos, racha e IQ se guardan solo en tu dispositivo.</li>
+          <li><strong>Sin conexión.</strong> Juega en el metro o en el avión. Internet solo hace falta para anuncios y compras.</li>
+        </ul>
+        <p style="margin-top:24px"><a href="privacy.html">Leer la política de privacidad ›</a></p>
+      </div>
+    </section>
+
+    <!-- Preguntas -->
+    <section class="tile alt" aria-labelledby="faq-title">
+      <div class="wrap pad-b">
+        <p class="eyebrow">Preguntas frecuentes</p>
+        <h2 id="faq-title" class="headline reveal">Lo que te estás preguntando.</h2>
+        <div class="faq reveal">
+          <details>
+            <summary>¿Es gratis?</summary>
+            <p>Sí. Todos los niveles se juegan gratis. Hay anuncios y, si quieres, puedes comprar rayos o quitar los anuncios con una compra única.</p>
+          </details>
+          <details>
+            <summary>¿El IQ es real?</summary>
+            <p>Es una estimación de entretenimiento basada en cómo juegas: aciertos, estrellas, velocidad, constancia y ayudas usadas. No es una prueba psicológica ni un diagnóstico.</p>
+          </details>
+          <details>
+            <summary>¿Necesito internet o crear una cuenta?</summary>
+            <p>No. Cifra funciona sin conexión y sin registro. Solo se necesita internet para los anuncios y las compras.</p>
+          </details>
+          <details>
+            <summary>¿Dónde se guarda mi progreso?</summary>
+            <p>En tu teléfono. No hay servidores con datos de jugadores. Si borras la app se borra tu progreso; «Quitar anuncios» siempre se puede restaurar.</p>
+          </details>
+          <details>
+            <summary>¿Para qué edad es?</summary>
+            <p>Para todo público. Los acertijos van de fáciles a muy difíciles, así que hay reto para chicos y grandes.</p>
+          </details>
+        </div>
+        <p style="margin-top:28px">¿Otra duda? <a href="support.html">Visita soporte ›</a></p>
+      </div>
+    </section>
+
+    <!-- Descargar -->
+    <section id="descargar" class="tile dark hero" aria-labelledby="descargar-title">
+      <div class="wrap pad-b">
+        <img class="hero-icon" src="assets/img/icon-192.png" alt="" width="88" height="88" loading="lazy">
+        <h2 id="descargar-title" class="headline reveal">¿Crees poder competir<br>contra <span class="hl">mi IQ</span>?</h2>
+        <p class="lead reveal">Descarga Cifra gratis, resuelve y reta a tus amigos.</p>
+        <div class="badges reveal">
+          <a class="store-badge" data-store="ios" href="https://apps.apple.com/app/id6834884097" target="_blank" rel="noopener" aria-label="Descárgalo en el App Store">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 1.43c0 1.14-.5 2.27-1.18 3.08-.74.9-1.99 1.57-2.99 1.57-.12 0-.23-.02-.3-.03-.01-.06-.04-.22-.04-.39 0-1.15.57-2.27 1.2-2.98.81-.94 2.15-1.64 3.25-1.68.03.13.06.28.06.43Zm4.56 15.71c-.03.07-.46 1.58-1.52 3.12-.94 1.34-1.94 2.71-3.43 2.71-1.52 0-1.9-.88-3.63-.88-1.7 0-2.3.91-3.67.91-1.38 0-2.33-1.26-3.43-2.8C4 18.38 2.97 15.57 2.97 12.92c0-4.28 2.8-6.55 5.55-6.55 1.45 0 2.67.95 3.6.95.86 0 2.22-1.01 3.9-1.01.61 0 2.89.06 4.37 2.19-.13.09-2.38 1.37-2.38 4.19 0 3.26 2.85 4.42 2.95 4.45Z"/></svg>
+            <span><small>Descárgalo en el</small><strong>App Store</strong></span>
+          </a>
+          <a class="store-badge" data-store="android" href="https://play.google.com/store/apps/details?id=com.luiscaballero.cifra" target="_blank" rel="noopener" aria-label="Disponible en Google Play">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00c3ff" d="M3.6 1.8 13.8 12 3.6 22.2c-.37-.2-.6-.6-.6-1.1V2.9c0-.5.23-.9.6-1.1Z"/><path fill="#ffc400" d="m17.2 8.6 3.2 1.8c.9.5.9 1.8 0 2.3l-3.2 1.8-3.4-2.5Z"/><path fill="#00d26a" d="M3.6 1.8c.36-.22.82-.22 1.2 0l12.4 6.8-3.4 3.4Z"/><path fill="#ff3a44" d="m13.8 12 3.4 3.4-12.4 6.8c-.38.22-.84.22-1.2 0Z"/></svg>
+            <span><small>Disponible en</small><strong>Google Play</strong></span>
+          </a>
+        </div>
+        <p class="badge-note">Para iPhone y Android · Gratis con compras opcionales</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-links">
+        <a href="privacy.html">Privacidad</a>
+        <a href="terms.html">Términos</a>
+        <a href="support.html">Soporte</a>
+        <a href="support.html#borrar-datos">Borrar mis datos</a>
+        <a href="en/" hreflang="en" lang="en" data-lang-link="en">English</a>
+      </div>
+      <p>Cifra: Math IQ es un juego independiente. El IQ que muestra es una estimación de entretenimiento, no una prueba psicológica.</p>
+      <p>App Store es una marca de Apple Inc. Google Play es una marca de Google LLC.</p>
+      <p>© 2026 Luis Angel Caballero Jardón · Hecho con 🧠 en Metepec, México</p>
+    </div>
+  </footer>
+  <script src="js/site.js" defer></script>
 </body>
 </html>

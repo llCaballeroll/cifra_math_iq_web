@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Soporte · Cifra: Math IQ</title>
     <meta name="description" content="Ayuda y contacto de Cifra: Math IQ: compras, rayos, anuncios, IQ y progreso.">
-    <meta name="theme-color" content="#000000">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
     <link rel="canonical" href="https://llcaballeroll.github.io/cifra_math_iq_web/support.html">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
@@ -13,20 +15,22 @@
 </head>
 <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
-    <nav class="navbar" aria-label="Principal">
-        <div class="container nav-inner">
-            <a href="index.html" class="brand"><img src="assets/img/icon-192.png" alt="" width="30" height="30">Cifra</a>
-            <div class="nav-links">
-                <a href="privacy.html">Privacidad</a>
-                <a href="terms.html">Términos</a>
-                <a href="support.html" aria-current="page">Soporte</a>
-            </div>
-            <a href="index.html#descargar" class="nav-cta">Descargar</a>
-        </div>
+    <header class="nav">
+    <nav class="wrap nav-inner" aria-label="Principal">
+      <a class="brand" href="./" aria-label="Cifra: Math IQ, inicio"><img src="assets/img/icon-192.png" alt="" width="28" height="28">Cifra</a>
+      <div class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="privacy.html">Privacidad</a>
+        <a href="terms.html">Términos</a>
+        <a href="support.html" aria-current="page">Soporte</a>
+      </div>
+      <a class="nav-lang" href="en/" hreflang="en" lang="en" aria-label="English version">EN</a>
+      <a class="btn" href="index.html#descargar" data-smart-download>Descargar</a>
     </nav>
+  </header>
 
     <main id="contenido">
-        <header class="page-hero dark">
+        <header class="page-hero">
             <div class="container">
                 <span class="eyebrow">Soporte</span>
                 <h1>¿Cómo te ayudamos?</h1>
@@ -34,10 +38,10 @@
             </div>
         </header>
 
-        <section>
+        <section class="support">
             <div class="container narrow">
                 <a class="btn" href="mailto:luis.caballero1199@outlook.com?subject=Soporte%20Cifra%3A%20Math%20IQ">Escribir a soporte</a>
-                <p style="margin-top:12px;color:var(--ink-2);font-size:.95rem">Incluye el modelo de tu teléfono, la versión de iOS o Android y, si puedes, una captura.</p>
+                <p style="margin-top:12px;color:var(--text-muted);font-size:.95rem">Incluye el modelo de tu teléfono, la versión de iOS o Android y, si puedes, una captura.</p>
 
                 <div class="support-grid">
                     <div class="support-card">
@@ -77,14 +81,19 @@
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-bottom" style="padding-top:0">
-                <span>© 2026 Luis Angel Caballero Jardón · Cifra: Math IQ</span>
-                <span class="footer-links"><a href="privacy.html">Privacidad</a><a href="terms.html">Términos</a><a href="support.html">Soporte</a></span>
-            </div>
-        </div>
-    </footer>
+    <footer class="footer">
+    <div class="wrap">
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="privacy.html">Privacidad</a>
+        <a href="terms.html">Términos</a>
+        <a href="support.html">Soporte</a>
+        <a href="support.html#borrar-datos">Borrar mis datos</a>
+        <a href="en/" hreflang="en" lang="en">English</a>
+      </div>
+      <p>© 2026 Luis Angel Caballero Jardón · Cifra: Math IQ</p>
+    </div>
+  </footer>
     <script src="js/site.js" defer></script>
 </body>
 </html>
