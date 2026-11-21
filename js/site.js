@@ -1,7 +1,7 @@
 // Cifra: Math IQ — botones de tienda y animaciones de entrada.
 (function () {
-  // Cuando la app esté publicada, pon aquí los enlaces reales.
-  var IOS_URL = '';      // p. ej. https://apps.apple.com/mx/app/cifra-math-iq/id0000000000
+  // Enlaces de las tiendas (publicada en ambas).
+  var IOS_URL = 'https://apps.apple.com/mx/app/cifra-math-iq/id6834884097';
   var ANDROID_URL = 'https://play.google.com/store/apps/details?id=com.luiscaballero.cifra';
 
   var ua = navigator.userAgent || '';
